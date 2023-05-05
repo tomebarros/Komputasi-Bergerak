@@ -429,7 +429,7 @@ nav .burger {
     min-height: 100vh;
     /* align-items: center; */
     justify-content: start;
-    background-color: rgba(1, 1, 1, 0.6);
+    background-color:var(--clr-light2);
     z-index: -1;
     transition: all 1s;
     transform: translateX(100%);
@@ -448,7 +448,7 @@ nav .burger {
   nav ul li a {
     display: inline-block;
     text-transform: capitalize;
-    color: #f1f5f9;
+    color: var(--clr-dark);
     font-size: 1rem;
     padding: 1rem 2rem 2rem;
   }
@@ -493,7 +493,7 @@ nav .burger {
 
 /* utility */
 .btn {
-  color: var(--clr-dark);
+  color: #f1f5f9;
   text-decoration: none;
   padding: 0.2rem 3rem;
   border-radius: 0.1rem;
