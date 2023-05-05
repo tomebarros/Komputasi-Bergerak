@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Tome Barros</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap" rel="stylesheet" />
+
+    <!-- fether icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav> 
+      <h1>Tome<span>Barros</span></h1>
+      
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#demo">Mulai</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div class="icon">
+        <i data-feather="sun" class="icon" id="theme-toggle"></i>
+      </div>
+      
+      <label class="burger" for="burger">
+        <input type="checkbox" id="burger" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </nav>
+
+    <!-- jumbitron  start -->
+    <section class="jumbotron" id="home">
+      <div class="content">
+        <h3>Tugas Komputasi Bergerak</h3>
+        <p>Mengenali Hewan <span>Kucing Dan Anjing</span></p>
+        <a href="#demo" class="btn">Mulai</a>
+      </section>
+    </div>
+    <!-- jumbitron  end -->
+
+
+    <section id="about" class="about">
+      <h3>Tentang <span>Kami</span></h3>
+      <div class="content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere blanditiis deserunt libero maiores, excepturi nam corporis possimus molestias aperiam magnam similique nostrum quasi vel? Excepturi, ut. Mollitia accusamus odio, repudiandae ut nobis voluptatibus temporibus esse sunt animi commodi delectus, est, fugit corporis iste qui odit alias? Voluptatem, commodi praesentium sapiente ipsum incidunt in ipsa asperiores molestiae fugit eum harum natus.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere blanditiis deserunt libero maiores, excepturi nam corporis possimus molestias aperiam magnam similique nostrum quasi vel? Excepturi, ut. Mollitia accusamus odio, repudiandae ut nobis voluptatibus temporibus esse sunt animi commodi delectus, est, fugit corporis iste qui odit alias? Voluptatem, commodi praesentium sapiente ipsum incidunt in ipsa asperiores molestiae fugit eum harum natus.</p>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <h3>Demo <span>Object</span></h3>
+
+      <div class="main">
+        <div class="content">
+          <h4>Teachable Machine Image Model</h4>
+          <div id="webcam-container"></div>
+          <div id="label-container"></div>
+
+          <button type="button"  onclick="init()" class="btn">Mulai</button>
+        </div>  
+      </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+      <h3>Hubungi <span>Kami</span></h3>
+
+      <div class="row">
+        <div class="lokasi">
+          <iframe class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.8698008479491!2d123.62252426149576!3d-10.162979452289497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c56834e0db12415%3A0x4adc2c26430f6087!2sSTIKOM%20Uyelindo%20Kupang!5e0!3m2!1sid!2sid!4v1682952982181!5m2!1sid!2sid"
+        
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <form action="">
+            <div class="form-control">
+              <i data-feather="user"></i>
+              <input type="text" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-control">
+              <i data-feather="mail"></i>
+              <input type="email" placeholder="Email Anda" required>
+            </div>
+            <div class="form-text">
+              <textarea id="exampleFormControlTextarea1" required minlength="10" placeholder="Pesan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-sm">Kirim</button>
+          </form>
+      </div>
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+      <div class="link">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="youtube"></i></a>
+        <a href="#"><i data-feather="github"></i></a>
+      </div>
+      <p>&copy; 2023 Tome Ornai Barros</p>
+    </footer>
+
+
+    <script>
+      feather.replace()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="js/model.js"></script>
+    
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
