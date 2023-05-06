@@ -541,7 +541,7 @@ nav .burger {
   height: 20px;
 
   & .path {
-    stroke: var(--clr-dark);
+    stroke: var(--primary);
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite;
   }
