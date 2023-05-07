@@ -44,6 +44,7 @@ nav {
   right: 0;
   left: 0;
   z-index: 99999;
+  border-bottom: 3px solid var(--primary);
 }
 
 nav h1 {
@@ -71,7 +72,7 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 3px;
-  transition: all .8s;
+  transition: all .8s ease;
 }
 
 nav ul li a:hover {
@@ -223,8 +224,13 @@ nav .burger {
   text-align: center;
   gap: 2rem;
   flex: 1;
-
 }
+
+.about .content .kanan,
+.about .content .kiri {
+  width: 50%;
+}
+
 
 /* demo */
 .demo .main {
@@ -348,12 +354,16 @@ nav .burger {
 
 /* footer */
 .footer {
-  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
 .footer .link {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   gap: 2rem;
 }
@@ -368,6 +378,7 @@ nav .burger {
   text-align: center;
   color: var(--clr-dark);
   cursor: pointer;
+  transition: all .8s ease;
 }
 
 .footer a:hover,
@@ -385,6 +396,11 @@ nav .burger {
 
   .about .content {
     flex-direction: column;
+  }
+
+  .about .content .kanan,
+  .about .content .kiri {
+    width: 100%;
   }
 
   .contact .row {
@@ -541,7 +557,7 @@ nav .burger {
   height: 20px;
 
   & .path {
-    stroke: var(--primary);
+    stroke: var(--primary) !important;
     stroke-linecap: round;
     animation: dash 1.5s ease-in-out infinite;
   }
